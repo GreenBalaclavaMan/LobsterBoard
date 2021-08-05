@@ -53,6 +53,9 @@
 								//user_verified
 								$user_verified = false;
 
+								//user_active
+								$user_active = true;
+
 	                                   //Insert the new user into the database
 	                                   $sql = "INSERT INTO `t_users`(`user_id`, `user_name`, `user_birthday`, `user_email`, `user_password`, `user_verified`) VALUES (NULL,'$user_name',NULL,'$user_email','$user_password','$user_verified')" or DIE('Bad Insert Query');
 	                                   mysqli_query($conn, $sql);

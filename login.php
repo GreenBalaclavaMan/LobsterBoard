@@ -17,7 +17,7 @@
 			//Query database for associated username
 			$username = $_POST['username'];
 			$password = $_POST['password'];
-			$sql = "SELECT * FROM `t_users` WHERE user_name='$username'";
+			$sql = "SELECT * FROM `t_users` WHERE user_name='$username' AND user_active=true";
 			$userdata = mysqli_query($conn, $sql) or DIE('Bad Select Query');
 
 			//Check if username exists in database
