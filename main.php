@@ -2,18 +2,21 @@
 	//Init Variables
 	$title = "Main";
 
-	//Gain Conn
-	require 'scripts/dbc.php';
-
 	//Header
 	require 'header.php';
-
-	//
 ?>
 <html>
-	<p>
-		C:/terminal
-	</p>
+	<div class="div-content">
+		<h1>
+			Navigation
+		</h1>
+		<ul>
+			<li><a href="createaccount.php">createaccount.php</a></li>
+			<li><a href="deleteaccount.php">deleteaccount.php</a></li>
+			<li><a href="login.php">login.php</a></li>
+			<li><a href="logout.php">logout.php</a></li>
+		</ul>
+	</div>
 </html>
 <?php
 

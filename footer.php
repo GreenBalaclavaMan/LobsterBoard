@@ -1,3 +1,4 @@
+<html>
 		<!--Footer-->
 		<div class="div-footer">
 			<p>

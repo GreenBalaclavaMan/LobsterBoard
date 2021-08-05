@@ -6,10 +6,6 @@
 	$user_name = "";
 	$user_email = "";
 
-
-	//Gain Conn
-	require 'scripts/dbc.php';
-
 	//Header
 	require 'header.php';
 

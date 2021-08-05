@@ -5,9 +5,6 @@
 	$username = "";
 	$password = "";
 
-	//Gain Conn
-	require 'scripts/dbc.php';
-
 	//Header
 	require 'header.php';
 
@@ -36,7 +33,7 @@
 
 	                         //Store user data in session
 	                         $_SESSION['user_id'] = $row['user_id'];
-	                         $_SESSION['username'] = $row['user_name'];
+	                         $_SESSION['user_name'] = $row['user_name'];
 
 						//Redirect to main
 	                         header('location:main.php');
