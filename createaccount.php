@@ -97,10 +97,13 @@
 
 		<!--Create Account Form-->
           <form method="POST" action="createaccount.php">
-               <input type="text" name="newuser" placeholder="Username" value="<?php echo($user_name); ?>">
-			<input type="text" name="newemail" placeholder="Email" value="<?php echo($user_email); ?>">
-               <input type="password" name="newpassword" placeholder="Password">
-               <input type="password" name="newpassword2" placeholder="Confirm password">
+			<label for="newuser">Username</label>
+               <input type="text" id="newuser" name="newuser" placeholder="Your new username" value="<?php echo($user_name); ?>">
+			<label for="newemail">Email</label>
+			<input type="text" id="newemail" name="newemail" placeholder="Your email" value="<?php echo($user_email); ?>">
+			<label for="newpassword">Password</label>
+               <input type="password" id="newpassword" name="newpassword" placeholder="A password">
+               <input type="password" name="newpassword2" placeholder="Confirm your password">
                <input type="submit" name="submitbutton" value="Create Account">
           </form>
 <?php
