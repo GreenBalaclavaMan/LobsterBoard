@@ -31,28 +31,17 @@
 
                <!--Banner-->
                <div class="div-header">
-                    <!--Logo-->
+				<!--Logo-->
 				<div class="header-logo">
 	                    <a href="index.php">
-	                         <img class="header-logo" src="images/logo.png" alt="WebOTP Logo" href="index.php">
+	                         <img class="header-logo" src="images/logo.png" alt="WebOTP Logo">
 	                    </a>
 				</div>
-               </div>
 
-			<div>
-				<p>
-					Session Status:
-<?php
-	switch($log_status) {
-		case true:
-			echo("Logged in as, " . $_SESSION['user_name']);
-			break;
-		case false:
-			echo("Logged out");
-			break;
-	}
-?>
-				</p>
-
+				<!--Navigation Links-->
+				<div class="header-navigation">
+	                    <a class="navigation-link" href="viewaccount.php">Account</a>
+				</div>
 			</div>
+
 </html>

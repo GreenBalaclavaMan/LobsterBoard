@@ -69,8 +69,8 @@ div.div-header {
 
 	align: center;
 
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 0;
+	padding-right: 0;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -101,7 +101,7 @@ div.header-logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 200px;
+	width: 100px;
 }
 
 /*--------------------TEXT--------------------*/
@@ -122,11 +122,38 @@ h2 {
 	font-family: 'Roboto Mono', monospace;
 }
 
+/*--------------------LISTS/TABLES--------------------*/
+ol {
+	color: #dddddd;
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
+}
+ul {
+	color: #dddddd;
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
+}
+table {
+	color: #dddddd;
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
+	width: 100%;
+	padding: 12px 20px;
+}
+td.cell-heading {
+	font-weight: bolder;
+}
+td.header-cell {
+	width: auto;
+}
 /*--------------------LINKS/URLs--------------------*/
 a {
-  outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
+	color: #dddddd;
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
+	outline: none;
+	text-decoration: none;
+	padding: 2px 1px 0;
 }
 a:link {
 	color: #4ebcfc;
@@ -142,6 +169,9 @@ a:hover {
 }
 a:active {
 	color: white;
+}
+a.navigation-link {
+
 }
 
 /*--------------------FORMS/INPUT--------------------*/
@@ -223,5 +253,5 @@ img.header-logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 200px;
+	width: 100px;
 }

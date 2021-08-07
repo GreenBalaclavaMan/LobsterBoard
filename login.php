@@ -35,8 +35,8 @@
 	                         $_SESSION['user_id'] = $row['user_id'];
 	                         $_SESSION['user_name'] = $row['user_name'];
 
-						//Redirect to main
-	                         header('location:main.php');
+						//Redirect to account view
+	                         header('location: viewaccount.php');
 		               }else{
 		                    $msg = "Incorrect password";
 		               }
@@ -71,7 +71,7 @@
           </form>
 
           <p>
-               <?php     echo $msg;     ?>
+               <?php echo $msg; ?>
 		</p>
 
 		<p>
