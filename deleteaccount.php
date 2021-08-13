@@ -35,7 +35,8 @@
 
                               //Insert the new user into the database
 						$user_id = $_SESSION['user_id'];
-						$sql = "UPDATE `t_users` SET `user_active` = 0 WHERE `t_users`.`user_id` = 4;";
+						$user_active = false;
+						$sql = "UPDATE `t_users` SET `user_active` = 0 WHERE `t_users`.`user_id` = $user_id;";
                               mysqli_query($conn, $sql);
                               $msg = $successmsg;
 
